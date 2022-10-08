@@ -1,10 +1,10 @@
-,name,nationality,gold,silver,bronze,total,country,latitude,longitude,join_as
-1,Michael Phelps,USA,5,1,0,6,United States of America,39.045753,-76.641273,swimmer
-2,Katie Ledecky,USA,4,1,0,5,United States of America,47.751076,-120.740135,swimmer
-3,Simone Biles,USA,4,0,1,5,United States of America,40.367474,-82.996216,gymnast
-4,Emma McKeon,AUS,1,2,1,4,Australia,-31.840233,145.612793,swimmer
-5,Katinka Hosszu,HUN,3,1,0,4,Hungary,46.0833333,18.2333333,swimmer
-6,Madeline Dirado,USA,2,1,1,4,United States of America,36.778259,-119.417931,swimmer
-7,Nathan Adrian,USA,2,0,2,4,United States of America,47.564994,-122.626959,swimmer
-8,Penny Oleksiak,CAN,1,1,2,4,Canada,43.65107,-79.347015,swimmer
-9,Simone Manuel,USA,2,2,0,4,United States of America,31,-100,swimmer
+,name,nationality,gold,silver,bronze,total,country,latitude,longitude,join_as,image
+1,Michael Phelps,USA,5,1,0,6,United States of America,39.045753,-76.641273,swimmer,image/micheal.jpg
+2,Katie Ledecky,USA,4,1,0,5,United States of America,47.751076,-120.740135,swimmer,image/Katie.jpg
+3,Simone Biles,USA,4,0,1,5,United States of America,40.367474,-82.996216,gymnast,image/Simone.jpg
+4,Emma McKeon,AUS,1,2,1,4,Australia,-31.840233,145.612793,swimmer,image/Emma.jiff
+5,Katinka Hosszu,HUN,3,1,0,4,Hungary,46.0833333,18.2333333,swimmer,image/Katinka.jiff
+6,Madeline Dirado,USA,2,1,1,4,United States of America,36.778259,-119.417931,swimmer,image/Madeline.jpg
+7,Nathan Adrian,USA,2,0,2,4,United States of America,47.564994,-122.626959,swimmer,image/Nathan.jpg
+8,Penny Oleksiak,CAN,1,1,2,4,Canada,43.65107,-79.347015,swimmer,image/Penny.jiff
+9,Simone Manuel,USA,2,2,0,4,United States of America,31,-100,swimmer,image/Manuel.jiff
