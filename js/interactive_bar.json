@@ -1,0 +1,97 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 1000,
+    "title": "Gold medal per country in Rio Oympic",
+    "data": {
+      "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_homework_week10/main/data/country_sex.csv"
+    },
+    "params": [
+      {
+        "name": "Sex_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "male",
+            "female"
+          ],
+          "labels": [
+            "Show All",
+            "Male",
+            "Female"
+          ],
+          "name": "Gender: "
+        }
+      }
+    ],
+    
+    "transform": [
+      {"filter": "Sex_selection == null || datum.sex == Sex_selection"} 
+    ],
+    "encoding": {
+      "x": {
+        "field": "nationality",
+        "type": "nominal",
+        "title": "Country"
+      },
+      "y": {
+        "field": "gold",
+        "type": "quantitative",
+        "title": "Number of Gold Medal"
+      }
+    },
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "color": {
+            "field": "sex",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "male",
+                "female"
+              ],
+              "range": [
+                "blue",
+                "red"
+              ]
+            },
+            "legend":null
+          },
+          "opacity": {"value": 0.8},
+          "tooltip": [
+            {"field": "nationality", "type": "nominal", "title": "Country"},
+            {"field": "sex", "type": "nominal", "title":"Gender"},
+            {"field": "gold", "type": "quantitative", "title": "Golds"}
+          ]
+        }
+      },
+      {
+        "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -8,
+            "dy": -8,
+            "baseline": "middle",
+            "fontStyle": "bold"
+            },
+            "encoding": {
+                "text": {"field": "nationality", "type": "nominal", "title":"Country"},
+                "color": {"value": "black"},
+                "opacity": {
+                  "condition": {
+                    "test": "datum['nationality'] == 'CHN' || datum['nationality'] == 'USA' ",
+                    "value": 1
+                  },
+                  "value": 0
+                },
+                "tooltip": [
+                  {"field": "nationality", "type": "nominal"}
+                ]
+              }
+      }
+    ]
+  }
+  

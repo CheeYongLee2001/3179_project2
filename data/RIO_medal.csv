@@ -1,0 +1,87 @@
+country,country code,gold,silver,bronze,total,Latitude,Longitude
+Algeria,ALG,0,2,0,2,28,3
+Argentina,ARG,3,1,0,4,-34,-64
+Armenia,ARM,1,3,0,4,40,45
+Australia,AUS,8,11,10,29,-27,133
+Austria,AUT,0,0,1,1,47.3333,13.3333
+Azerbaijan,AZE,1,7,10,18,40.5,47.5
+Bahamas,BAH,1,0,1,2,24.25,-76
+Burundi,BDI,0,1,0,1,-3.5,30
+Belgium,BEL,2,2,2,6,50.8333,4
+Belarus,BLR,1,4,4,9,53,28
+Brazil,BRA,7,6,6,19,-10,-55
+Bahrain,BRN,1,1,0,2,4.5,114.6667
+Bulgaria,BUL,0,1,2,3,43,25
+Canada,CAN,4,3,15,22,60,-95
+China,CHN,26,18,26,70,35,105
+C�te d'Ivoire,CIV,1,0,1,2,8,-5
+Colombia,COL,3,2,3,8,4,-72
+Croatia,CRO,5,3,2,10,45.1667,15.5
+Cuba,CUB,5,2,4,11,21.5,-80
+Czechia,CZE,1,2,7,10,49.75,15.5
+Denmark,DEN,2,6,7,15,56,10
+Dominican Republic,DOM,0,0,1,1,19,-70.6667
+Egypt,EGY,0,0,3,3,27,30
+Spain,ESP,7,4,6,17,40,-4
+Estonia,EST,0,0,1,1,59,26
+Ethiopia,ETH,1,2,5,8,8,38
+Fiji,FIJ,1,0,0,1,-18,175
+Finland,FIN,0,0,1,1,64,26
+France,FRA,10,18,14,42,46,2
+United Kingdom,GBR,27,23,17,67,54,-2
+Georgia,GEO,2,1,4,7,42,43.5
+Germany,GER,17,10,15,42,51,9
+Greece,GRE,3,1,2,6,39,22
+Grenada,GRN,0,1,0,1,12.1167,-61.6667
+Hungary,HUN,8,3,4,15,47,20
+Indonesia,INA,1,2,0,3,-5,120
+India,IND,0,1,1,2,20,77
+Individual Olympic Athletes,IOA,1,0,1,2,,
+Iran,IRI,3,1,4,8,32,53
+Ireland,IRL,0,2,0,2,53,-8
+Israel,ISR,0,0,2,2,31.5,34.75
+Italy,ITA,8,12,8,28,42.8333,12.8333
+Jamaica,JAM,6,3,2,11,18.25,-77.5
+Jordan,JOR,1,0,0,1,31,36
+Japan,JPN,12,8,21,41,36,138
+Kazakhstan,KAZ,2,5,10,17,48,68
+Kenya,KEN,6,6,1,13,1,38
+South Korea,KOR,9,3,9,21,37,127.5
+Kosovo,KOS,1,0,0,1,56,24
+Lithuania,LTU,0,1,3,4,56,24
+Morocco,MAR,0,0,1,1,32,-5
+Malaysia,MAS,0,4,1,5,2.5,112.5
+Mexico,MEX,0,3,2,5,23,-102
+Mongolia,MGL,0,1,1,2,46,105
+Netherlands,NED,8,7,4,19,52.5,5.75
+Nigeria,NGR,0,0,1,1,10,8
+Niger,NIG,0,1,0,1,16,8
+Norway,NOR,0,0,4,4,62,10
+New Zealand,NZL,4,9,5,18,-41,174
+Philippines,PHI,0,1,0,1,13,122
+Poland,POL,2,3,6,11,52,20
+Portugal,POR,0,0,1,1,39.5,-8
+North Korea,PRK,2,3,2,7,40,127
+Puerto Rico,PUR,1,0,0,1,25.5,51.25
+Qatar,QAT,0,1,0,1,25.5,51.25
+Romania,ROU,1,1,2,4,46,25
+South Africa,RSA,2,6,2,10,-29,24
+Russia,RUS,19,17,20,56,60,100
+Singapore,SGP,1,0,0,1,1.3667,103.8
+Slovenia,SLO,1,2,1,4,46,15
+Serbia,SRB,2,4,2,8,44,21
+Switzerland,SUI,3,2,2,7,47,8
+Slovakia,SVK,2,2,0,4,48.6667,19.5
+Sweden,SWE,2,6,3,11,62,15
+Thailand,THA,2,2,2,6,15,100
+Tajikistan,TJK,1,0,0,1,39,71
+Taiwan,TPE,1,0,2,3,23.5,121
+Trinidad and Tobago,TTO,0,0,1,1,11,-61
+Tunisia,TUN,0,0,3,3,34,9
+Turkey,TUR,1,3,4,8,39,35
+United Arab Emirates,UAE,0,0,1,1,24,54
+Ukraine,UKR,2,5,4,11,49,32
+United States of America,USA,46,37,38,121,38,-97
+Uzbekistan,UZB,4,2,7,13,41,64
+Venezuela,VEN,0,2,1,3,8,-66
+Vietnam,VIE,1,1,0,2,16,106
