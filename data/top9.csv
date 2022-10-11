@@ -1,10 +1,10 @@
 ,name,nationality,gold,silver,bronze,total,country,latitude,longitude,join_as,image
-1,Michael Phelps,USA,5,1,0,6,United States of America,39.045753,-76.641273,swimmer,image/micheal.jpg
-2,Katie Ledecky,USA,4,1,0,5,United States of America,47.751076,-120.740135,swimmer,image/Katie.jpg
-3,Simone Biles,USA,4,0,1,5,United States of America,40.367474,-82.996216,gymnast,image/Simone.jpg
-4,Emma McKeon,AUS,1,2,1,4,Australia,-31.840233,145.612793,swimmer,image/Emma.jiff
-5,Katinka Hosszu,HUN,3,1,0,4,Hungary,46.0833333,18.2333333,swimmer,image/Katinka.jiff
-6,Madeline Dirado,USA,2,1,1,4,United States of America,36.778259,-119.417931,swimmer,image/Madeline.jpg
-7,Nathan Adrian,USA,2,0,2,4,United States of America,47.564994,-122.626959,swimmer,image/Nathan.jpg
-8,Penny Oleksiak,CAN,1,1,2,4,Canada,43.65107,-79.347015,swimmer,image/Penny.jiff
-9,Simone Manuel,USA,2,2,0,4,United States of America,31,-100,swimmer,image/Manuel.jiff
+1,Michael Phelps,USA,5,1,0,6,United States of America,39.045753,-76.641273,swimmer,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Michael_Phelps_Rio_Olympics_2016.jpg/800px-Michael_Phelps_Rio_Olympics_2016.jpg
+2,Katie Ledecky,USA,4,1,0,5,United States of America,47.751076,-120.740135,swimmer,https://media.self.com/photos/611c0e6d0e470ae91013649c/4:3/w_2560%2Cc_limit/1234250592
+3,Simone Biles,USA,4,0,1,5,United States of America,40.367474,-82.996216,gymnast,https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_300/v1627219484/primary/cts0yqdhtfm9yowtrv1j
+4,Emma McKeon,AUS,1,2,1,4,Australia,-31.840233,145.612793,swimmer,https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/pknnjkuqev5nyiupnlhu
+5,Katinka Hosszu,HUN,3,1,0,4,Hungary,46.0833333,18.2333333,swimmer,https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_300/primary/vrswu1rivvqqhzsirzly
+6,Madeline Dirado,USA,2,1,1,4,United States of America,36.778259,-119.417931,swimmer,https://www-images.christianitytoday.com/images/72374.jpeg?h=337&w=600
+7,Nathan Adrian,USA,2,0,2,4,United States of America,47.564994,-122.626959,swimmer,https://upload.wikimedia.org/wikipedia/commons/0/06/Nathan_Adrian_Rio_2016b.jpg
+8,Penny Oleksiak,CAN,1,1,2,4,Canada,43.65107,-79.347015,swimmer,https://i.cbc.ca/1.6120233.1627930908!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_780/olympics-2020-swm-w-200mfr-medal.JPG
+9,Simone Manuel,USA,2,2,0,4,United States of America,31,-100,swimmer,https://www.gannett-cdn.com/presto/2020/07/21/USAT/e533971a-9afe-45fa-9f5c-3c5eeb99fb3c-USP_Olympics__Swimming.JPG
