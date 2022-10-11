@@ -1,0 +1,169 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 500,
+    "title": "Propotional of Each Sport's Events Contribute to Rio Olympic",
+    "data": {
+      "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/sport.csv"
+    },
+    "params": [
+      {"name": "select", "select": "point"},
+      {
+        "name": "Sport",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "aquatics",
+            "archery",
+            "athletics",
+            "badminton",
+            "basketball",
+            "boxing",
+            "canoe",
+            "cycling",
+            "equestrian",
+            "fencing",
+            "football",
+            "golf",
+            "gymnastics",
+            "handball",
+            "hockey",
+            "judo",
+            "modern pentathlon",
+            "rowing",
+            "rugby sevens",
+            "sailing",
+            "shooting",
+            "table tennis",
+            "taekwondo",
+            "tennis",
+            "triathlon",
+            "volleyball",
+            "weightlifting",
+            "wrestling"
+          ],
+          "labels": [
+            "Show All",
+            "Aquatics",
+            "Archery",
+            "Athletics",
+            "Badminton",
+            "Basketball",
+            "Boxing",
+            "Canoe",
+            "Cycling",
+            "Equestrian",
+            "Fencing",
+            "Football",
+            "Golf",
+            "Gymnastics",
+            "Handball",
+            "Hockey",
+            "Judo",
+            "Modern pentathlon",
+            "Rowing",
+            "Rugby sevens",
+            "Sailing",
+            "Shooting",
+            "Table tennis",
+            "taekwondo",
+            "Tennis",
+            "Triathlon",
+            "Volleyball",
+            "Weightlifting",
+            "Wrestling"
+          ],
+          "name": "Sport: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "Sport == null || datum.sport == Sport"
+      }
+    ],
+    "mark": {"type": "arc", "innerRadius": 20},
+    "encoding": {
+      "theta": {"field": "count", "type": "quantitative"},
+      "radius": {
+        "field": "count",
+        "scale": {"type": "sequential", "rangeMin": 60}
+      },
+      "color": {
+        "field": "sport",
+        "type": "nominal",
+        "legend": null,
+        "scale": {
+          "domain": [
+            "aquatics",
+            "archery",
+            "athletics",
+            "badminton",
+            "basketball",
+            "boxing",
+            "canoe",
+            "cycling",
+            "equestrian",
+            "fencing",
+            "football",
+            "golf",
+            "gymnastics",
+            "handball",
+            "hockey",
+            "judo",
+            "modern pentathlon",
+            "rowing",
+            "rugby sevens",
+            "sailing",
+            "shooting",
+            "table tennis",
+            "taekwondo",
+            "tennis",
+            "triathlon",
+            "volleyball",
+            "weightlifting",
+            "wrestling"
+          ],
+          "range": [
+            "skyblue",
+            "pink",
+            "purple",
+            "violet",
+            "blueviolet",
+            "navy",
+            "burlywood",
+            "olive",
+            "brown",
+            "darkgrey",
+            "green",
+            "seagreen",
+            "limegreen",
+            "forestgreen",
+            "lightpink",
+            "cadetblue",
+            "royalblue",
+            "gold",
+            "aqua",
+            "darkseagreen",
+            "hotpink",
+            "beige",
+            "grey",
+            "lawngreen",
+            "bisque",
+            "black",
+            "darkcyan",
+            "darkkhaki"
+          ]
+        }
+      },
+      
+      
+      "fillOpacity": {"condition": {"param": "select", "value": 1}, "value": 0.2},
+      "tooltip": [
+        {"field": "sport", "type": "nominal", "title":"Sport"},
+        {"field": "count", "type": "quantitative", "title": "Number of Events"}
+      ]
+    },
+    "config": {"view": {"stroke": "transparent"}}
+  }

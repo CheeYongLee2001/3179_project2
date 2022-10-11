@@ -1,0 +1,85 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/highlighted_sport.csv"},
+    "hconcat": 
+    [
+        {
+            "width": 400,
+            "height": 600,
+            "title": "Aquatics Events Result (Top 6)",
+            "mark": {"type":"circle", "size":50},
+            "transform": [
+                {"filter":"datum.sport == 'aquatics'"},
+                {"filter":"datum.nationality == 'USA' || datum.nationality == 'AUS' || datum.nationality == 'ITA' || datum.nationality == 'CHN' || datum.nationality == 'RUS' || datum.nationality == 'JPN'"}
+            ],
+            "selection": {
+                "sex_selection": {
+                  "type": "multi", "fields": ["sex"], "bind": "legend"
+                }
+              },
+            "encoding": {
+                "x": {"field": "total", "type": "quantitative", "title": "Total of Medals"},
+                "y": {"field": "nationality", "type": "nominal", "title": "Country"},
+                "color": {
+                    "field": "sex",
+                    "type": "nominal",
+                    "scale": {
+                      "domain": [
+                        "male",
+                        "female"
+                      ],
+                      "range": [
+                        "blue",
+                        "red"
+                      ]
+                    }
+                },
+                "opacity" : { "condition" : { "selection" : "sex_selection" , "value" : 0.8 }, "value" : 0.1},
+                "tooltip": [
+                    {"field": "nationality", "type": "nominal", "title": "Country"},
+                    {"field": "sex", "type": "nominal", "title":"Gender"},
+                    {"field": "total", "type": "quantitative", "title": "Number of Total Medals"}
+                  ]
+            }
+        },
+        {
+            "width": 400,
+            "height": 600,
+            "title":"Athletics Events Result (Top 6)",
+            "transform": [
+                {"filter":"datum.sport == 'athletics'"},
+                {"filter":"datum.nationality == 'USA' || datum.nationality == 'JAM' || datum.nationality == 'KEN' || datum.nationality == 'GBR' || datum.nationality == 'CAN' || datum.nationality == 'ETH'"}
+            ],
+            "selection": {
+                "sex_selection": {
+                  "type": "multi", "fields": ["sex"], "bind": "legend"
+                }
+              },
+            "mark": {"type":"circle", "size":50},
+            "encoding": {
+                "x": {"field": "total", "type": "quantitative", "title": "Total of Medals"},
+                "y": {"field": "nationality", "type": "nominal", "title": "Country"},
+                "color": {
+                    "field": "sex",
+                    "type": "nominal",
+                    "scale": {
+                      "domain": [
+                        "male",
+                        "female"
+                      ],
+                      "range": [
+                        "blue",
+                        "red"
+                      ]
+                    }
+                },
+                "opacity" : { "condition" : { "selection" : "sex_selection" , "value" : 0.8 }, "value" : 0.1},
+                "tooltip": [
+                    {"field": "nationality", "type": "nominal", "title": "Country"},
+                    {"field": "sex", "type": "nominal", "title":"Gender"},
+                    {"field": "total", "type": "quantitative", "title": "Number of Total Medals"}
+                  ]
+            }
+        }
+    ]
+}
