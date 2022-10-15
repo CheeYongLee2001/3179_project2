@@ -6,7 +6,7 @@
         {
             "width": 400,
             "height": 600,
-            "title": "Aquatics Events Result (Top 6)",
+            "title": "Aquatics(Top 6)",
             "mark": {"type":"circle", "size":50},
             "transform": [
                 {"filter":"datum.sport == 'aquatics'"},
@@ -45,7 +45,7 @@
         {
             "width": 400,
             "height": 600,
-            "title":"Athletics Events Result (Top 6)",
+            "title":"Athletics(Top 6)",
             "transform": [
                 {"filter":"datum.sport == 'athletics'"},
                 {"filter":"datum.nationality == 'USA' || datum.nationality == 'JAM' || datum.nationality == 'KEN' || datum.nationality == 'GBR' || datum.nationality == 'CAN' || datum.nationality == 'ETH'"}

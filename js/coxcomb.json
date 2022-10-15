@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 500,
     "height": 500,
-    "title": "Propotional of Each Sport's Events Contribute to Rio Olympic",
+    "title": "",
     "data": {
       "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/sport.csv"
     },
@@ -157,8 +157,6 @@
           ]
         }
       },
-      
-      
       "fillOpacity": {"condition": {"param": "select", "value": 1}, "value": 0.2},
       "tooltip": [
         {"field": "sport", "type": "nominal", "title":"Sport"},

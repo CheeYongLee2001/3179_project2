@@ -1,15 +1,15 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 400,
+    "width": 900,
+    "height": 600,
     "title": "",
     "params": [
         {
             "name": "Zoom",
-            "value": 100,
+            "value": 200,
             "bind": {
             "input": "range",
-            "min": 100,
+            "min": 200,
             "max": 700,
             "step": 100,
             "name": "Zoom: "
@@ -81,6 +81,68 @@
             {"field":"bronze", "type": "quantitative", "title":"Bronze"},
             {"field":"total", "type": "quantitative", "title": "Total"}
           ]
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/top9.csv"
+        },
+        "mark": {"type": "text", "fontSize": 10, "fontStyle":"italic"},
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"},
+          "text":{"field":"name"},
+          "opacity": {
+            "condition": {
+              "test": "datum['name'] == 'Michael Phelps' || datum['name'] == 'Simone Biles' || datum['name'] == 'Emma McKeon' || datum['name'] == 'Katinka Hosszu' || datum['name'] == 'Madeline Dirado' || datum['name'] == 'Penny Oleksiak' || datum['name'] == 'Simone Manuel'",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip":[
+            {"field":"name", "type": "nominal", "title":"Name"},
+            {"field":"nationality", "type": "nominal", "title":"Nationality"},
+            {"field":"gold", "type": "quantitative", "title":"Gold"},
+            {"field":"silver", "type": "quantitative", "title":"Silver"},
+            {"field":"bronze", "type": "quantitative", "title":"Bronze"},
+            {"field":"total", "type": "quantitative", "title": "Total"}
+          ]
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/top9.csv"
+        },
+        "mark": {"type": "text", "fontSize": 10, "fontStyle":"italic", "dx": 45, "dy":10},
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"},
+          "text":{"field":"name"},
+          "opacity": {
+            "condition": {
+              "test": "datum['name'] == 'Katie Ledecky' ",
+              "value": 1
+            },
+            "value": 0
+          }
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/top9.csv"
+        },
+        "mark": {"type": "text", "fontSize": 10, "fontStyle":"italic", "dx": -45, "dy":-10},
+        "encoding": {
+          "longitude": {"field": "longitude", "type": "quantitative"},
+          "latitude": {"field": "latitude", "type": "quantitative"},
+          "text":{"field":"name"},
+          "opacity": {
+            "condition": {
+              "test": "datum['name'] == 'Nathan Adrian' ",
+              "value": 1
+            },
+            "value": 0
+          }
         }
       }
     ],

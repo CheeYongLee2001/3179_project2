@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 800,
+    "width": 400,
+    "height": 600,
     "title": "",
     "data": {
       "url": "https://raw.githubusercontent.com/CheeYongLee2001/3179_project2/main/data/medallist_top5.csv"
@@ -9,17 +9,18 @@
     
     "encoding": {
       "x": {
-        "field": "gold",
-        "type": "quantitative",
-        "title": "Number of Gold Medals",
-        "scale":{"domain":[0,50]}
-      },
-      "y": {
         "field": "country",
         "type": "nominal",
         "title": "Country",
         "axis":{"labelExpr":""}
+      },
+      "y": {
+        "field": "gold",
+        "type": "quantitative",
+        "title": "Number of Gold Medals",
+        "scale":{"domain":[0,50]}
       }
+
     },
     "layer": [
       {
@@ -27,8 +28,8 @@
             "type": "image","width":50,"height":50
             },
             "encoding": {
-                "x": {"field":"gold", "type": "quantitative", "title":"Number of Gold Medals"},
-                "y": {"field":"country", "type": "nominal", "title":"Country"},
+                "x": {"field":"country", "type": "nominal", "title":"Country"},
+                "y": {"field":"gold", "type": "quantitative", "title":"Number of Gold Medals"},
                 "url":{"field":"flag", "type": "nominal"},
                 "tooltip": [
                   {"field": "country", "type": "nominal", "title":"Country"},
@@ -40,8 +41,7 @@
         "mark": {
             "type": "text",
             "align": "center",
-            "dx":5,
-            "dy": -20,
+            "dy": 30,
             "fontStyle": "bold"
             },
             "encoding": {
